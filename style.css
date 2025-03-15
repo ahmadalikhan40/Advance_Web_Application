@@ -1,0 +1,38 @@
+
+/* *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(3, 3, 65);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 30px;
+    color: white;
+    font-size: 1.4rem;
+}
+body{
+    background-color: black;
+} */
+
+.box{
+    border: 2px solid black;
+    height: 30vh;
+    width: 10vw;
+    margin:120px 400px;
+    padding: 220px 330px;
+    color: red;
+    background-color: bisque;
+   
+    
+}

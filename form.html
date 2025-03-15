@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University regestration form</title>
+    <style>
+        body{
+            font-family:  sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #979393;
+        }
+         
+        form {
+            background:rgb(111, 154, 235);
+            padding: 50px;
+            border-radius: 18px;
+            /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+            width: 100%;
+            max-width: 500px;
+            color:black;
+
+            
+        }
+        h2 {
+            text-align: center;
+            padding:20px;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bolder;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            /* background-color: #071308; */
+            background-color:rgb(3, 3, 98) ;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit-registration form" method="POST">
+        <h2><strong>Riphah Internaltional College/Univertsity-Registration Form</strong></h2>
+        <label for="fullname">FULL Name:</label>
+           <input type="text" id="fullname" name="fullname" required>
+
+           <label for="dob">Date OF Birth:</label>
+           <input type="date" name="dob" id="dob" required>
+
+           <label for="CNIC">CNIC:</label>
+           <input type="text" name="CNIC" id="CNIC" required>
+
+           <label for="gender">Select Gender:</label>
+           <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+           </select>
+
+           <label for="son/daughter of">Son/Daughter OF:</label>
+           <input type="text" name="son/daughter of" id="son/daughter of" required>
+
+           <label for="identity">Identification Mark:</label>
+           <select name="identity" id="identity">
+            <option value="mole on cheek">Mole on Cheek</option>
+           </select>
+
+           <label for="email">Enter Email:</label>
+           <input type="email" name="email" id="email" required>
+
+           <label for="phonenumber">Phone No:</label>
+           <input type="text" name="phonenumber" id="phonenumber" required>
+
+           <label for="address">Address:</label>
+           <textarea name="address" id="address" rows="3" cols="3" required></textarea>
+
+           <label for="program">Program Applying For:</label>
+           <select name="program" id="program" required>
+            <option value="Select Program">Select Program</option>
+            <option value="ADP">ADP</option>
+            <option value="Bechalors">Bechalor's</option>
+            <option value="Masters">Master's</option>
+            <option value="Phd">Phd</option>
+           </select>
+
+           <label for="major program">Major Program:</label>
+           <input type="text" name="major" id="major" required>
+
+
+        <label for="photo">Upload Passport-size Photo:</label>
+        <input type="file" id="photo" name="photo" required>
+
+         
+        <label for="checkbox">I Agree to the term and polices</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+
+
+        <button type="submit">Submit Registration</button>
+    
+
+    </form>
+</body>
+</html>
